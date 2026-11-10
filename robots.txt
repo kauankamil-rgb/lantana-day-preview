@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lantanaday.com.br/sitemap.xml
