@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lantana Day by Black</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Lantana Day by Black, 26 e 27 de novembro: até 50% off em produtos Lantana Nutrition, Kit Longevité por R$ 280,00 e até 20% off nos manipulados.">
+<meta name="theme-color" content="#00131b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Conceito: edição única, como a vitrine de uma boutique à noite. Fundo petróleo profundo, vitrines pretas com as fotos originais, luz verde Lantana ao redor, faixas creme para chamar atenção. */
+:root{
+  --night:#00131b; --night-2:#03202b; --night-3:#062a37;
+  --photo:#0a0a0a;
+  --teal:#006e7b; --teal-hi:#0a8b99; --aqua:#70b5c0; --ice:#c7e0e9; --cream:#f4f1ec; --wa:#25d366; --red:#e53935;
+  --muted:rgba(244,241,236,.74); --dim:rgba(244,241,236,.52);
+  --line:rgba(112,181,192,.22); --line-2:rgba(112,181,192,.38);
+  --f-serif:'Cormorant Garamond','Cormorant',Georgia,'Times New Roman',serif;
+  --f-sans:'Sora',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1280px; --head:80px; --bar:38px;
+  --gut-l:max(24px,env(safe-area-inset-left,0px)); --gut-r:max(24px,env(safe-area-inset-right,0px));
+  --ease:cubic-bezier(.22,.7,.12,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--head) + var(--bar));background:var(--night)}
+body{margin:0;font-family:var(--f-sans);font-weight:300;color:var(--cream);background:var(--night);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--f-serif);font-weight:400;line-height:.95;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+.label{font-size:11px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--aqua)}
+:focus-visible{outline:1px solid var(--cream);outline-offset:5px}
+::selection{background:var(--teal);color:var(--cream)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--cream)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.04;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* faixa creme de aviso + cabeçalho */
+.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50}
+.aviso{height:var(--bar);display:flex;align-items:center;justify-content:center;gap:14px;background:var(--cream);color:var(--night);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding-left:var(--gut-l);padding-right:var(--gut-r);white-space:nowrap;overflow:hidden}
+.aviso i{width:5px;height:5px;border-radius:50%;background:var(--teal);flex:none}
+.aviso span{overflow:hidden;text-overflow:ellipsis}
+.aviso .so-mob{display:none}
+.head{transition:background-color .5s,border-color .5s;border-bottom:1px solid transparent}
+.top.is-solid .head{background:rgba(0,19,27,.86);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-color:var(--line)}
+.top-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:var(--head)}
+.top nav{display:flex;gap:34px}
+.top nav a,.top-cta{text-decoration:none;font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);transition:color .3s}
+.top nav a:hover,.top-cta:hover{color:var(--cream)}
+.logo img{height:50px;width:auto}
+.top-cta{justify-self:end;display:inline-flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line-2)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:56px;padding:0 38px;font:500 12px/1 var(--f-sans);letter-spacing:.26em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;border-radius:0;transition:background-color .4s,color .4s,box-shadow .4s}
+.btn svg{transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(5px)}
+.btn-solid{background:var(--cream);color:var(--night)}
+.btn-solid:hover{background:var(--teal);color:var(--cream)}
+.btn-line{background:transparent;color:var(--cream);box-shadow:inset 0 0 0 1px var(--line-2)}
+.btn-line:hover{background:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;text-align:center;
+  margin-top:calc(-1 * env(safe-area-inset-top,0px));
+  padding:calc(env(safe-area-inset-top,0px) + var(--bar) + var(--head) + 44px) 0 72px;
+  background:radial-gradient(60% 50% at 50% 62%,rgba(0,110,123,.5),transparent 72%),radial-gradient(90% 60% at 50% 120%,var(--night-3),transparent 70%),var(--night)}
+.hero .label{display:inline-flex;align-items:center;gap:16px}
+.hero .label::before,.hero .label::after{content:"";width:40px;height:1px;background:var(--line-2)}
+.hero h1{margin:22px auto 0;width:clamp(250px,30vw,430px)}
+.hero h1 img{width:100%;height:auto}
+.by{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:22px;font-size:clamp(14px,1.4vw,18px);font-weight:500;letter-spacing:.6em;text-transform:uppercase;padding-left:.6em}
+.by::before,.by::after{content:"";width:min(16vw,140px);height:1px;background:linear-gradient(90deg,transparent,var(--aqua))}
+.by::after{transform:scaleX(-1)}
+.rise{opacity:0;transform:translateY(22px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease);transition-delay:var(--d,0s)}
+.is-loaded .rise{opacity:1;transform:none}
+
+/* vitrine preta do topo: mesmo preto das fotos, cores originais */
+.vitrine{position:relative;max-width:1080px;margin:clamp(30px,4vw,52px) auto 0;padding:0 clamp(8px,2vw,24px);background:var(--photo);box-shadow:0 0 0 1px var(--line),0 0 120px -20px rgba(0,110,123,.55),0 60px 90px -50px rgba(0,0,0,.9)}
+.vitrine::before{content:"";position:absolute;inset:12px;border:1px solid rgba(112,181,192,.14);pointer-events:none;z-index:3}
+.lineup{display:flex;justify-content:center;align-items:flex-end}
+.jar{flex:none;width:22%;margin-inline:-2.6%;opacity:0;transform:translateY(36px);transition:opacity 1.4s var(--ease),transform 1.6s var(--ease);transition-delay:calc(.35s + var(--k) * .09s)}
+.jar img{width:100%;-webkit-mask-image:radial-gradient(closest-side at 50% 52%,#000 62%,transparent 100%);mask-image:radial-gradient(closest-side at 50% 52%,#000 62%,transparent 100%)}
+.is-loaded .jar{opacity:1;transform:none}
+.norm{scale:var(--z,1);transform-origin:50% var(--base,80%);translate:0 calc(80% - var(--base,80%))}
+/* dois grupos na vitrine: Longevité (novidade) e Nutrition */
+.grupos{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1fr);align-items:end}
+.grupo{display:flex;flex-direction:column;justify-content:flex-end;min-width:0}
+.grupo--lg{border-right:1px solid rgba(112,181,192,.16)}
+.lg-row{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:5%;height:clamp(200px,24vw,330px);padding:0 6% clamp(18px,2.4vw,34px)}
+.lg-row::after{content:"";position:absolute;z-index:0;left:10%;right:10%;bottom:clamp(8px,1.4vw,20px);height:26px;border-radius:50%;background:radial-gradient(closest-side,rgba(112,181,192,.25),transparent);filter:blur(8px)}
+.lg{position:relative;z-index:1;width:auto;max-width:none;filter:drop-shadow(0 14px 18px rgba(0,0,0,.6));opacity:0;transform:translateY(30px);transition:opacity 1.3s var(--ease),transform 1.5s var(--ease)}
+.lg-espuma{height:100%;transition-delay:.35s}
+.lg-ghkcu{height:68%;transition-delay:.45s}
+.lg-lumi{height:60%;transition-delay:.55s}
+.is-loaded .lg{opacity:1;transform:none}
+.grupo-cap{display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 10px 16px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center}
+.novo{padding:4px 8px;background:var(--teal);color:var(--cream);font-size:9.5px;letter-spacing:.2em}
+
+/* faixa creme da oferta sob os produtos */
+.flash{position:relative;z-index:4;display:flex;align-items:center;justify-content:center;gap:clamp(16px,3vw,40px);margin:0 calc(-1 * clamp(8px,2vw,24px));padding:clamp(14px,1.8vw,22px) 20px;background:var(--cream);color:var(--night)}
+.flash span{font-size:clamp(11px,1.1vw,14px);font-weight:600;letter-spacing:.34em;text-transform:uppercase}
+.flash b{font-family:var(--f-serif);font-weight:500;font-size:clamp(56px,7vw,104px);line-height:.8;letter-spacing:-.02em;color:var(--teal);font-variant-numeric:lining-nums}
+.flash b small{font-family:var(--f-sans);font-size:.24em;font-weight:600;letter-spacing:.22em;color:var(--night);margin-left:.3em;vertical-align:.5em}
+.flash i{width:1px;align-self:stretch;background:rgba(0,19,27,.2)}
+.flash{margin-bottom:clamp(24px,3vw,40px)}
+.flash .sh{font-family:var(--f-serif);font-weight:500;font-size:clamp(56px,7vw,104px);line-height:.8;letter-spacing:-.02em;color:var(--night);white-space:nowrap}
+.flash b em{font-family:var(--f-sans);font-style:normal;font-size:.15em;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--night);margin-right:.7em;vertical-align:.9em}
+
+.hero-foot{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,56px);margin-top:clamp(32px,4vw,52px);text-align:left}
+.offer-note{font-family:var(--f-serif);font-size:clamp(21px,2vw,27px);line-height:1.25;color:var(--muted)}
+.offer-note strong{font-weight:500;color:var(--cream)}
+.hero-foot .btn{justify-self:end}
+
+/* contagem: algarismos finos em serifa, separados por linhas */
+.clock{text-align:center}
+.clock .label{display:block;margin-bottom:14px}
+.digits{display:flex;align-items:stretch;justify-content:center}
+.digits div{display:grid;justify-items:center;gap:8px;padding:0 clamp(12px,2vw,26px)}
+.digits div + div{border-left:1px solid var(--line)}
+.digits b{font-family:var(--f-serif);font-weight:300;font-size:clamp(46px,5.6vw,78px);line-height:.85;font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.01em}
+/* números oscilam entre branco e vermelho para dar senso de urgência */
+.digits b{animation:urgencia 1.6s ease-in-out infinite alternate}
+@keyframes urgencia{from{color:var(--cream)}to{color:var(--red);text-shadow:0 0 18px rgba(229,57,53,.35)}}
+.digits small{font-size:10px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--dim)}
+
+/* faixa creme das ofertas: o ponto de maior contraste da página */
+.summary{background:var(--cream);color:var(--night)}
+.summary-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.summary a{display:flex;align-items:center;gap:20px;padding:38px clamp(16px,2vw,28px) 38px 0;text-decoration:none}
+.summary a + a{border-left:1px solid rgba(0,19,27,.16);padding-left:clamp(20px,2.6vw,40px)}
+.summary b{font-family:var(--f-serif);font-weight:400;font-size:clamp(52px,5vw,80px);line-height:.8;color:var(--teal);font-variant-numeric:lining-nums;letter-spacing:-.02em}
+.summary b small{font-family:var(--f-sans);font-size:.2em;font-weight:500;letter-spacing:.06em;vertical-align:1.6em;margin-right:4px;color:var(--night)}
+.summary span{display:grid;gap:6px;font-size:15px;color:rgba(0,19,27,.75)}
+.summary span em{font-style:normal;font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--night)}
+.summary svg{margin-left:auto;flex:none;transition:transform .4s var(--ease)}
+.summary a:hover svg{transform:translateX(6px)}
+
+/* seções */
+.sec{position:relative;padding-block:clamp(96px,12vw,170px)}
+.sec-title{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.7fr);gap:40px;align-items:end;margin-bottom:clamp(48px,6vw,88px)}
+.sec-title h2{font-size:clamp(48px,7vw,104px);font-weight:300;letter-spacing:-.02em;margin-top:18px}
+.sec-title h2 em{color:var(--aqua)}
+.sec-title > p{color:var(--muted);max-width:40ch;justify-self:end}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+/* catálogo: cada produto com a própria foto, sem trocas */
+.catalogo{background:linear-gradient(180deg,var(--night) 0%,var(--night-2) 50%,var(--night) 100%)}
+.item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(36px,6vw,100px);align-items:center;padding-block:clamp(48px,6vw,80px);border-top:1px solid var(--line)}
+.item:first-child{border-top:0;padding-top:0}
+.item-img{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--photo);box-shadow:0 0 0 1px var(--line),0 0 90px -30px rgba(0,110,123,.6)}
+.item-img::before{content:"";position:absolute;inset:12px;border:1px solid rgba(112,181,192,.14);z-index:2;pointer-events:none}
+.item-img img{width:100%;height:100%;object-fit:cover;transform:scale(var(--z,1));transition:transform 1.4s var(--ease)}
+.item:hover .item-img img{transform:scale(calc(var(--z,1) * 1.03))}
+.item-img .tag{position:absolute;z-index:3;top:26px;left:26px;display:grid;place-items:center;width:96px;height:96px;border-radius:50%;background:var(--cream);color:var(--night);text-align:center}
+.item-img .tag b{font-family:var(--f-serif);font-weight:500;font-size:34px;line-height:.8;font-variant-numeric:lining-nums}
+.item-img .tag small{display:block;font-size:9px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;margin-top:5px}
+.idx{font-size:11px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--aqua)}
+.item h3{font-size:clamp(50px,5.6vw,86px);font-weight:500;letter-spacing:-.015em;line-height:.92;margin:16px 0 14px;color:var(--cream)}
+.sub{font-size:13px;letter-spacing:.06em;color:var(--dim)}
+.ideal{margin-top:26px;font-family:var(--f-serif);font-size:clamp(22px,2vw,27px);font-style:italic;line-height:1.3;color:var(--ice);max-width:30ch}
+.desc{margin-top:12px;color:var(--muted);max-width:44ch}
+.specs{list-style:none;display:flex;flex-wrap:wrap;gap:6px 0;padding:0;margin:20px 0 0;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.specs li + li::before{content:"·";margin:0 12px;color:var(--aqua)}
+.price{display:flex;align-items:end;flex-wrap:wrap;gap:10px 22px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.price s{display:block;font-size:14px;color:var(--dim);margin-bottom:6px}
+.price b{display:block;font-family:var(--f-serif);font-weight:400;font-size:clamp(52px,5vw,74px);line-height:.85;letter-spacing:-.01em;font-variant-numeric:lining-nums;white-space:nowrap}
+.price b small{font-family:var(--f-sans);font-size:14px;font-weight:400;letter-spacing:.1em;margin-right:8px;vertical-align:.9em;color:var(--muted)}
+.pct{display:inline-flex;align-items:center;height:34px;padding:0 14px;font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;background:var(--teal);color:var(--cream);margin-bottom:6px}
+.eco{margin-top:12px;font-size:13px;color:var(--muted)}
+.eco strong{color:var(--cream);font-weight:500}
+.item .btn{margin-top:28px}
+
+/* kit Longevité: faixa clara, no tom da linha de skincare */
+.kit{background:var(--cream);color:var(--night)}
+.kit-in{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:center}
+.kit-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,1vw,14px)}
+.kit-photos figure{margin:0}
+.kit-photos img{width:100%;aspect-ratio:2/3;object-fit:cover;box-shadow:0 30px 50px -34px rgba(0,19,27,.55)}
+.kit-photos figure:nth-child(2){margin-top:clamp(24px,4vw,56px)}
+.kit-photos figcaption{display:grid;gap:2px;margin-top:12px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--night)}
+.kit-photos figcaption span{font-weight:400;letter-spacing:.08em;color:rgba(0,19,27,.55)}
+.kit .label{color:var(--teal)}
+.kit h2{font-size:clamp(52px,6vw,92px);font-weight:400;letter-spacing:-.02em;margin-top:16px}
+.kit h2 em{color:var(--teal)}
+.kit .ideal{color:rgba(0,19,27,.78)}
+.kit-list{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid rgba(0,19,27,.14)}
+.kit-list li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid rgba(0,19,27,.14)}
+.kit-list b{font-family:var(--f-serif);font-weight:500;font-size:24px;line-height:1.1}
+.kit-list span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(0,19,27,.55)}
+.kit .price{border-top:0;padding-top:0;margin-top:30px}
+.kit .price s{color:rgba(0,19,27,.5)}
+.kit .price b small{color:rgba(0,19,27,.6)}
+.kit .eco{color:rgba(0,19,27,.7)}
+.kit .eco strong{color:var(--night)}
+.btn-dark{background:var(--night);color:var(--cream);margin-top:28px}
+.btn-dark:hover{background:var(--teal)}
+
+/* condições: desconto progressivo em degraus + frete */
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:end;gap:10px;height:230px;margin:34px 0 0}
+.tier{height:var(--h);display:flex;flex-direction:column;justify-content:space-between;padding:16px 16px 14px;background:rgba(112,181,192,.1);box-shadow:inset 0 0 0 1px var(--line)}
+.tier b{font-family:var(--f-serif);font-weight:400;font-size:clamp(44px,4.4vw,62px);line-height:.8;font-variant-numeric:lining-nums}
+.tier span{font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tier--top{background:var(--teal);box-shadow:none}
+.tier--top span{color:var(--cream)}
+.m-cta{margin-top:34px}
+
+/* frete: faixa própria, vale para todas as compras */
+.frete-band{background:var(--cream);color:var(--night)}
+.frete-in{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(20px,4vw,56px);padding-block:clamp(36px,4vw,52px)}
+.frete-band .label{font-family:var(--f-serif);font-weight:500;font-size:clamp(40px,4.2vw,60px);line-height:.9;letter-spacing:-.01em;text-transform:none;color:var(--night)}
+.fr{display:flex;align-items:baseline;gap:18px;padding-left:clamp(20px,4vw,56px);border-left:1px solid rgba(0,19,27,.16)}
+.fr b{font-family:var(--f-serif);font-weight:400;font-size:clamp(40px,4.2vw,60px);line-height:.9;color:var(--teal);white-space:nowrap;font-variant-numeric:lining-nums}
+.fr span{font-size:15px;line-height:1.45;color:rgba(0,19,27,.78)}
+
+/* manipulados */
+.manip{background:var(--night);overflow:hidden}
+.manip-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;box-shadow:inset 0 0 0 1px var(--line)}
+.m-text{padding:clamp(40px,6vw,88px);display:flex;flex-direction:column;justify-content:center;background:radial-gradient(70% 60% at 0% 100%,rgba(0,110,123,.35),transparent 70%),var(--night-2)}
+.big20{font-family:var(--f-serif);font-weight:300;font-size:clamp(120px,15vw,230px);line-height:.75;letter-spacing:-.04em;color:var(--aqua);margin:26px 0 8px;font-variant-numeric:lining-nums}
+.big20 small{font-size:.4em;color:var(--cream);margin-left:.04em}
+.manip h2{font-size:clamp(38px,4.2vw,60px);font-weight:300;margin-top:14px}
+.manip h2 em{color:var(--ice)}
+.manip .txt{color:var(--muted);max-width:42ch;margin-top:20px}
+.cond{display:flex;align-items:center;gap:14px;margin:30px 0 34px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+.cond b{font-family:var(--f-serif);font-size:28px;font-weight:400;letter-spacing:0;text-transform:none}
+.manip .btn{align-self:flex-start}
+.m-photo{position:relative;min-height:520px;overflow:hidden}
+.m-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.m-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--night-2) 0%,rgba(3,32,43,.1) 30%,transparent 50%)}
+
+/* fechamento */
+.closing{text-align:center;background:radial-gradient(50% 60% at 50% 100%,rgba(0,110,123,.5),transparent 75%),var(--night)}
+.closing h2{font-size:clamp(56px,9vw,140px);font-weight:300;letter-spacing:-.02em}
+.closing h2 em{color:var(--aqua)}
+.closing p{color:var(--muted);max-width:44ch;margin:26px auto 40px}
+
+.rodape{border-top:1px solid var(--line);padding-block:48px calc(110px + env(safe-area-inset-bottom,0px));font-size:12.5px;color:var(--dim)}
+.foot{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center}
+.foot .logo img{height:46px}
+.foot nav{display:flex;flex-wrap:wrap;gap:24px}
+.foot a{text-decoration:none;color:var(--muted);transition:color .3s}
+.foot a:hover{color:var(--cream)}
+
+/* botão fixo do WhatsApp, com uma piscada de tempos em tempos */
+.wa-float{position:fixed;z-index:70;right:calc(22px + env(safe-area-inset-right,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));width:60px;height:60px;display:grid;place-items:center;border-radius:50%;background:var(--wa);color:#fff;box-shadow:0 0 0 6px rgba(0,19,27,.55),0 18px 34px -12px rgba(0,0,0,.7);transition:transform .3s var(--ease)}
+.wa-float svg{width:30px;height:30px;animation:pisca 4.5s ease-in-out infinite}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid var(--wa);animation:onda 4.5s ease-out infinite}
+.wa-float:hover{transform:scale(1.06)}
+@keyframes pisca{0%,80%,100%{transform:none}86%{transform:scale(1.12)}92%{transform:scale(.97)}}
+@keyframes onda{0%,78%{transform:scale(1);opacity:0}82%{opacity:.9}100%{transform:scale(1.8);opacity:0}}
+
+@media (max-width:1023px){
+  .top nav{display:none}
+  .top-in{grid-template-columns:auto 1fr}
+  .hero-foot{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .hero-foot .btn{justify-self:center}
+  .offer-note{order:2;max-width:34ch}
+}
+@media (max-width:959px){
+  .sec-title,.manip-in,.item,.kit-in{grid-template-columns:1fr}
+  .summary-in{grid-template-columns:1fr}
+  .summary a + a{border-left:0;border-top:1px solid rgba(0,19,27,.16);padding-left:0}
+  .summary a{padding:26px 0;gap:20px}
+  .sec-title > p{justify-self:start}
+  .item{gap:30px;max-width:560px;margin-inline:auto}
+  .m-photo{min-height:380px;order:-1}
+  .m-photo::after{background:linear-gradient(0deg,var(--night-2) 0%,transparent 40%)}
+  .foot{grid-template-columns:auto 1fr}
+  .foot nav{grid-column:1/-1}
+}
+@media (max-width:639px){
+  :root{--head:66px;--bar:34px;--gut-l:max(18px,env(safe-area-inset-left,0px));--gut-r:max(18px,env(safe-area-inset-right,0px))}
+  .aviso{font-size:9.5px;letter-spacing:.14em;gap:10px}
+  .aviso .so-desk{display:none}
+  .aviso .so-mob{display:block}
+  .logo img{height:40px}
+  .top-cta{font-size:10px;letter-spacing:.18em}
+  .hero{padding-bottom:56px}
+  .hero .label{font-size:10px;letter-spacing:.2em;gap:10px}
+  .hero .label::before,.hero .label::after{width:16px}
+  .flash b,.flash .sh{font-size:50px}
+  .by{gap:14px;letter-spacing:.45em}
+  .hero h1{width:min(78vw,330px);margin-top:22px}
+  .vitrine{margin-inline:-6px;padding:0}
+  .flash{margin-bottom:22px}
+  .flash span{white-space:nowrap}
+  .flash b{display:block;text-align:center}
+  .flash b em{display:block;font-size:10px;letter-spacing:.18em;margin:0 0 8px;line-height:1.2}
+  .grupos{grid-template-columns:1fr}
+  .grupo--lg{border-right:0;border-bottom:1px solid rgba(112,181,192,.16)}
+  .lg-row{height:210px;gap:7%}
+  .grupo-cap{font-size:10px;letter-spacing:.14em;padding:10px 8px 14px}
+  .lineup{padding-inline:4px}
+  .jar{width:42%;margin-inline:-5.5%}
+  .jar:nth-child(1),.jar:nth-child(2),.jar:nth-child(6){display:none}
+  .flash{margin-inline:0;gap:14px;padding:14px 12px}
+  .flash span{letter-spacing:.24em}
+  .digits div{padding:0 11px}
+  .hero-foot .btn,.item .btn,.manip .btn,.closing .btn,.kit .btn{width:100%}
+  .kit-photos figcaption{font-size:9.5px;letter-spacing:.1em}
+  .kit-list b{font-size:21px}
+  .tiers{height:200px;gap:6px}
+  .tier{padding:12px 10px}
+  .tier span{font-size:9.5px;letter-spacing:.08em}
+  .frete-in{grid-template-columns:1fr;gap:0;padding-block:30px 22px}
+  .frete-in .label{margin-bottom:8px}
+  .fr{border-left:0;border-top:1px solid rgba(0,19,27,.16);padding:16px 0}
+  .item-img .tag{width:80px;height:80px;top:20px;left:20px}
+  .item-img .tag b{font-size:29px}
+  .m-text{padding:36px 22px 40px}
+  .foot{grid-template-columns:1fr}
+  .wa-float{width:56px;height:56px;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.rise,.jar{opacity:1!important;transform:none!important}
+}
+</style>
+<link rel="canonical" href="https://lantanaday.com.br/blackfriday/">
+<meta property="og:url" content="https://lantanaday.com.br/blackfriday/">
+<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EWKD2BP9VX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EWKD2BP9VX');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me"],a[href*="whatsapp.com"]');if(a)gtag('event','clique_whatsapp',{campanha:'blackfriday'});},true);</script>
+</head>
+<body>
+<!--
+  LANTANA DAY BY BLACK | 26 e 27/11/2026
+  Para editar preços, textos, fotos, data e WhatsApp, altere apenas o bloco CONFIG no final deste arquivo.
+-->
+<header class="top" id="top">
+  <a class="aviso" href="#kit"><span class="so-desk">Somente 26 e 27/11/2026</span><i class="so-desk"></i><span class="so-desk">Kit Longevité R$ 280</span><i class="so-desk"></i><span class="so-desk">Até 50% off na Nutrition</span><i class="so-desk"></i><span class="so-desk">Até 20% off nos manipulados</span><span class="so-mob">Só 26 e 27/11</span><i class="so-mob"></i><span class="so-mob">Kit Longevité R$ 280 + até 50% off</span></a>
+  <div class="head">
+    <div class="wrap top-in">
+      <nav aria-label="Seções">
+        <a href="#kit">Kit Longevité</a>
+        <a href="#catalogo">Nutrition</a>
+        <a href="#condicoes">Manipulados</a>
+      </nav>
+      <a href="#topo" class="logo"><img src="bw/logo-lantana-claro.png" alt="Lantana Saúde Personalizada" width="720" height="238"></a>
+      <a class="top-cta" data-wa="geral" href="#" target="_blank" rel="noopener">Atendimento</a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap">
+      <p class="label rise" style="--d:.05s">Edição especial · 26 e 27 de novembro</p>
+      <h1 class="rise" style="--d:.15s"><img src="bw/logo-lantana-day-branco.png" alt="Lantana Day" width="1451" height="864" fetchpriority="high"></h1>
+      <p class="by rise" style="--d:.28s">by Black</p>
+      <div class="vitrine rise" style="--d:.3s">
+        <p class="flash"><strong class="sh">Só 2 dias</strong><i aria-hidden="true"></i><b><em>descontos de até</em>50%<small>off</small></b></p>
+        <div class="grupos">
+          <div class="grupo grupo--lg">
+            <div class="lg-row">
+              <img class="lg lg-espuma" src="bw/lg-espuma.png" alt="Espuma Calmante Lantana Longevité" width="245" height="1100">
+              <img class="lg lg-ghkcu" src="bw/lg-ghkcu.png" alt="GHK-Cu Repair Serum Lantana Longevité" width="474" height="1100">
+              <img class="lg lg-lumi" src="bw/lg-lumigold.png" alt="Lumigold C Serum Lantana Longevité" width="529" height="961">
+            </div>
+            <p class="grupo-cap"><span class="novo">Novo</span>Kit Longevité · R$&nbsp;280</p>
+          </div>
+          <div class="grupo grupo--nt">
+            <div class="lineup" id="lineup"></div>
+            <p class="grupo-cap">Lantana Nutrition · até 50% off</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <p class="offer-note rise" style="--d:.9s"><strong>Kit Longevité</strong> por R$&nbsp;280,00, <strong>até 50% off</strong> em produtos Lantana Nutrition e <strong>até 20% off</strong> nos manipulados.</p>
+        <div class="clock rise" style="--d:1s">
+          <span class="label" id="cd-label">Começa em</span>
+          <div class="digits" id="countdown" aria-live="off">
+            <div><b data-u="h">00</b><small>horas</small></div>
+            <div><b data-u="m">00</b><small>min</small></div>
+            <div><b data-u="s">00</b><small>seg</small></div>
+          </div>
+        </div>
+        <a class="btn btn-solid rise" style="--d:1.1s" href="#kit">Ver as ofertas <svg width="18" height="10" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="summary" aria-label="Ofertas do dia">
+    <div class="wrap summary-in">
+      <a href="#kit"><b><small>R$</small>280</b><span><em>Kit Longevité</em>De R$&nbsp;349,90 por R$&nbsp;280,00</span><svg width="22" height="12" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      <a href="#catalogo"><b><small>até</small>50%</b><span><em>Lantana Nutrition</em>De 20% a 50% off em seis produtos</span><svg width="22" height="12" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      <a href="#condicoes"><b>20%</b><span><em>Manipulados</em>Desconto progressivo de até 20%</span><svg width="22" height="12" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+    </div>
+  </nav>
+
+  <section class="sec kit" id="kit">
+    <div class="wrap kit-in">
+      <div class="kit-photos rv">
+        <figure><img src="bw/kit-espuma.jpg" alt="Espuma Calmante Lantana Longevité" loading="lazy" width="1024" height="1536"><figcaption>Espuma Calmante<span>150 ml</span></figcaption></figure>
+        <figure><img src="bw/kit-ghkcu.jpg" alt="GHK-Cu Repair Serum Lantana Longevité" loading="lazy" width="1024" height="1536"><figcaption>GHK-Cu Repair Serum<span>30 ml</span></figcaption></figure>
+        <figure><img src="bw/kit-lumigold.jpg" alt="Lumigold C Serum Lantana Longevité" loading="lazy" width="1024" height="1536"><figcaption>Lumigold C Serum<span>30 ml</span></figcaption></figure>
+      </div>
+      <div class="kit-text">
+        <p class="label rv">Lantana Longevité · Kit</p>
+        <h2 class="rv" style="--d:.06s">Kit <em>Longevité</em></h2>
+        <p class="ideal rv" style="--d:.1s">Três produtos da linha Longevité para a rotina de cuidado com a pele, juntos em um kit.</p>
+        <ul class="kit-list rv" style="--d:.14s">
+          <li><b>Espuma Calmante</b><span>150 ml</span></li>
+          <li><b>GHK-Cu Repair Serum</b><span>30 ml</span></li>
+          <li><b>Lumigold C Serum</b><span>30 ml</span></li>
+        </ul>
+        <div class="price rv" style="--d:.18s">
+          <div><s>de R$ 349,90</s><b><small>R$</small>280,00</b></div>
+          <span class="pct">Preço de kit</span>
+        </div>
+        <p class="eco rv" style="--d:.2s">Economia de <strong>R$ 69,90</strong> no Lantana Day</p>
+        <a class="btn btn-dark rv" style="--d:.24s" data-wa="kit" href="#" target="_blank" rel="noopener">Quero o kit <svg width="18" height="10" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec catalogo" id="catalogo">
+    <div class="wrap">
+      <div class="sec-title">
+        <div>
+          <p class="label rv">A coleção</p>
+          <h2 class="rv" style="--d:.08s">Seis produtos com <em>até 50%</em> off</h2>
+        </div>
+        <p class="rv" style="--d:.16s">Conheça cada produto com calma. O pedido é feito direto com a equipe da Lantana, pelo WhatsApp, só nos dias 26 e 27.</p>
+      </div>
+      <div id="lista"></div>
+    </div>
+  </section>
+
+  <section class="sec manip" id="condicoes">
+    <div class="wrap">
+      <div class="manip-in rv">
+        <div class="m-text">
+          <p class="label">Manipulados</p>
+          <h2>Quanto maior o pedido de manipulados, <em>maior</em> o desconto.</h2>
+          <p class="txt">Desconto progressivo válido somente para manipulados.</p>
+          <div class="tiers">
+            <div class="tier" style="--h:52%"><b>10%</b><span>Até R$ 300,00</span></div>
+            <div class="tier" style="--h:72%"><b>15%</b><span>Até R$ 600,00</span></div>
+            <div class="tier tier--top" style="--h:100%"><b>20%</b><span>Acima de R$ 600,00</span></div>
+          </div>
+          <a class="btn btn-solid m-cta" data-wa="manip" href="#" target="_blank" rel="noopener">Pedir manipulados <svg width="18" height="10" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        </div>
+        <div class="m-photo"><img src="bw/manipulados-capsulas.jpg" alt="Potes da Lantana com cápsulas manipuladas" loading="lazy" width="1050" height="1400"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="frete-band" id="frete" aria-label="Frete">
+    <div class="wrap frete-in rv">
+      <p class="label">Frete</p>
+      <p class="fr"><b>R$ 20,00</b><span>Frete fixo para todo o Brasil</span></p>
+      <p class="fr"><b>Grátis</b><span>Frete para MG em compras acima de R$&nbsp;600,00</span></p>
+    </div>
+  </section>
+
+  <section class="sec closing" id="contato">
+    <div class="wrap">
+      <p class="label rv">26 e 27 de novembro</p>
+      <h2 class="rv" style="--d:.08s">Dois dias só.<br><em>Uma edição.</em></h2>
+      <p class="rv" style="--d:.16s">Fale com a equipe da Lantana para tirar dúvidas e garantir as condições do Lantana Day by Black.</p>
+      <a class="btn btn-solid rv" style="--d:.24s" data-wa="geral" href="#" target="_blank" rel="noopener">Falar com a Lantana <svg width="18" height="10" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap foot">
+    <a href="#topo" class="logo"><img src="bw/logo-lantana-claro.png" alt="Lantana Saúde Personalizada" width="720" height="238"></a>
+    <p id="validade"></p>
+    <nav aria-label="Lantana nas redes">
+      <a href="https://www.farmacialantana.com.br" target="_blank" rel="noopener">farmacialantana.com.br</a>
+      <a href="https://www.instagram.com/farmacialantana/" target="_blank" rel="noopener">@farmacialantana</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="geral" href="#" target="_blank" rel="noopener" aria-label="Falar com a Lantana no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.3.6 4.53 1.74 6.5L3 29l6.68-1.75A12.95 12.95 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.78c-2.03 0-4-.55-5.73-1.58l-.41-.24-3.96 1.04 1.06-3.86-.27-.4A10.73 10.73 0 0 1 5.3 16c0-5.92 4.82-10.74 10.75-10.74 5.92 0 10.73 4.82 10.73 10.74 0 5.93-4.81 10.78-10.74 10.78Zm5.89-8.05c-.32-.16-1.91-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.83 1.05-1.02 1.27-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.91-1.79-2.23-.19-.32-.02-.5.14-.66.15-.14.32-.38.48-.56.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.52-.54-.72-.55h-.62c-.21 0-.56.08-.86.4-.29.32-1.12 1.1-1.12 2.68s1.15 3.11 1.31 3.32c.16.21 2.26 3.45 5.47 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.91-.78 2.18-1.53.27-.75.27-1.4.19-1.53-.08-.14-.29-.22-.61-.38Z"/></svg>
+</a>
+
+<script>
+/* =====================================================================
+   CONFIG: tudo o que muda na campanha fica aqui.
+   - zoom: tamanho do produto na foto do catálogo.
+   - zoomTopo / base: tamanho e linha da "mesa" na fileira do topo.
+   - ideal: frase curta, em linguagem simples, dizendo para quem é o produto.
+   ===================================================================== */
+const CONFIG = {
+  // WhatsApp: +55 31 9 9225-0059
+  whatsapp: '5531992250059',
+  mensagemGeral: 'Olá! Vi o Lantana Day by Black e gostaria de saber mais sobre as ofertas.',
+  mensagemManip: 'Olá! Vi o Lantana Day by Black e gostaria de fazer um pedido de manipulados com o desconto progressivo.',
+  mensagemKit: 'Olá! Vi o Kit Longevité (Espuma Calmante + GHK-Cu + Lumigold C) de R$ 349,90 por R$ 280,00 no Lantana Day by Black e gostaria de fazer o pedido.',
+
+  // Antes do início o contador mostra "Começa em"; durante a campanha, "Termina em".
+  inicio: '2026-11-26T00:00:00-03:00',
+  fim: '2026-11-27T23:59:59-03:00',
+  validade: 'Ofertas válidas somente em 26 e 27/11/2026 ou enquanto durarem os estoques. Desconto progressivo válido somente para manipulados: 10% até R$ 300,00, 15% até R$ 600,00 e 20% acima de R$ 600,00. Frete fixo de R$ 20,00 para todo o Brasil e grátis para MG em compras acima de R$ 600,00. Consulte as condições de pagamento.',
+
+  // Ordem dos produtos na fileira do topo (números da lista abaixo, começando em 0).
+  ordemTopo: [0, 4, 5, 2, 3, 1],
+
+  ofertas: [
+    {
+      nome: 'Shot Impulso', nomeMsg: 'Shot Pré-Treino Impulso', de: '149,90', por: '74,95', off: 50,
+      foto: 'bw/shot-impulso.jpg', zoom: 0.94, zoomTopo: 0.9, base: 75,
+      apresentacao: 'Pré-treino · 300 g · pink lemonade',
+      ideal: 'Pré-treino para tomar antes da academia ou do esporte.',
+      descricao: 'Com beta-alanina, taurina, arginina e 250 mg de cafeína, mais magnésio, zinco e vitamina B6.',
+      destaques: ['Cafeína 250 mg', 'Beta-alanina', 'Zero açúcar']
+    },
+    {
+      nome: 'Suchá Lanfit', nomeMsg: 'Suchá Lanfit', de: '239,90', por: '119,95', off: 50,
+      foto: 'bw/sucha-lanfit.jpg', zoom: 0.96, zoomTopo: 0.92, base: 81,
+      apresentacao: '30 sachês · sabor uva',
+      ideal: 'Em sachês individuais: é só misturar na água, um por dia.',
+      descricao: 'Com Morosil, citrus aurantium, cranberry, chá verde, guaraná, gengibre e picolinato de cromo.',
+      destaques: ['Morosil', 'Chá verde', '30 sachês']
+    },
+    {
+      nome: 'Creatina Gummy', nomeMsg: 'Creatina Gummy sabor uva', de: '139,90', por: '90,90', off: 35,
+      foto: 'bw/creatina-gummy.jpg', zoom: 0.98, zoomTopo: 1.02, base: 84,
+      apresentacao: '30 gomas · sabor uva',
+      ideal: 'Creatina em goma: prática de levar e fácil de tomar todo dia, sem pó e sem medir.',
+      descricao: 'Cada goma tem 3 g de creatina monohidratada. Zero glúten, zero lactose e zero açúcar.',
+      destaques: ['3 g por goma', 'Zero açúcar', '1 goma ao dia']
+    },
+    {
+      nome: 'Saúde da Mulher', nomeMsg: 'Shot Saúde da Mulher', de: '149,90', por: '112,40', off: 25,
+      foto: 'bw/shot-saude-mulher.jpg', zoom: 1.05, zoomTopo: 1.0, base: 76,
+      apresentacao: 'Shot · 30 doses · 150 g',
+      ideal: 'Pensado para a rotina da mulher, com vários ativos em um só shot diário.',
+      descricao: 'Com mio-inositol, L-arginina, feno-grego, pinho marítimo e frutas vermelhas liofilizadas.',
+      destaques: ['Mio-inositol', 'L-arginina', 'Feno-grego']
+    },
+    {
+      nome: 'Shot Detox', nomeMsg: 'Shot Detox Green Lanfit', de: '149,90', por: '119,90', off: 20,
+      foto: 'bw/shot-detox.jpg', zoom: 1.08, zoomTopo: 0.9, base: 76.5,
+      apresentacao: 'Green Lanfit · 30 doses · 150 g · abacaxi com hortelã',
+      ideal: 'Para quem quer incluir verdes na rotina sem complicação.',
+      descricao: 'Mistura em pó com beta-glucana, espirulina, chlorella, couve e espinafre. Uma dose por dia.',
+      destaques: ['Beta-glucana', 'Espirulina', 'Chlorella']
+    },
+    {
+      nome: 'Shot Matinal', nomeMsg: 'Lanfit Shot Matinal', de: '119,90', por: '95,90', off: 20,
+      foto: 'bw/shot-matinal.jpg', zoom: 1.03, pos: '50% 25%', zoomTopo: 0.94, base: 80.7,
+      apresentacao: 'Lanfit · 420 g · sabor limão',
+      ideal: 'Para começar o dia: dissolva na água ou no suco pela manhã.',
+      descricao: 'Com L-glutamina 3.000 mg, fibras, coenzima Q10, resveratrol, cúrcuma e zinco.',
+      destaques: ['L-glutamina', 'Fibras', 'Coenzima Q10']
+    }
+  ]
+};
+
+/* ===================== não é preciso editar abaixo ===================== */
+const wa = msg => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+const num = s => +s.replace('.', '').replace(',', '.');
+const real = n => n.toFixed(2).replace('.', ',');
+const dois = n => String(n).padStart(2, '0');
+const seta = '<svg width="18" height="10" viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>';
+const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const total = CONFIG.ofertas.length;
+
+// Topo: os seis produtos lado a lado na vitrine preta, os do centro um pouco maiores
+const escala = [.84, .94, 1, 1, .94, .84];
+document.getElementById('lineup').innerHTML = CONFIG.ordemTopo.map(n => CONFIG.ofertas[n]).map((p, k) =>
+  `<span class="jar" style="--k:${k};z-index:${k < 3 ? k : 5 - k}"><img class="norm" src="${p.foto}" alt="Embalagem de ${p.nome}" width="1024" height="1536" style="--z:${((p.zoomTopo || 1) * escala[k]).toFixed(3)};--base:${p.base || 80}%"${k > 1 && k < 4 ? ' fetchpriority="high"' : ''}></span>`
+).join('');
+
+// Catálogo: cada produto com a própria foto
+document.getElementById('lista').innerHTML = CONFIG.ofertas.map((p, i) => {
+  const eco = real(num(p.de) - num(p.por));
+  const msg = `Olá! Vi o ${p.nomeMsg} com ${p.off}% off (de R$ ${p.de} por R$ ${p.por}) no Lantana Day by Black e gostaria de fazer o pedido.`;
+  return `<article class="item">
+    <div class="item-img rv"><img src="${p.foto}" alt="Embalagem de ${p.nome}" loading="lazy" width="1024" height="1536" style="--z:${p.zoom || 1}${p.pos ? `;object-position:${p.pos}` : ''}"><span class="tag"><span><b>${p.off}%</b><small>off</small></span></span></div>
+    <div>
+      <p class="idx rv">${dois(i + 1)} / ${dois(total)}</p>
+      <h3 class="rv" style="--d:.06s">${p.nome}</h3>
+      <p class="sub rv" style="--d:.1s">${p.apresentacao}</p>
+      <p class="ideal rv" style="--d:.14s">${p.ideal}</p>
+      <p class="desc rv" style="--d:.18s">${p.descricao}</p>
+      <ul class="specs rv" style="--d:.2s">${p.destaques.map(d => `<li>${d}</li>`).join('')}</ul>
+      <div class="price rv" style="--d:.24s">
+        <div><s>de R$ ${p.de}</s><b><small>R$</small>${p.por}</b></div>
+        <span class="pct">${p.off}% off</span>
+      </div>
+      <p class="eco rv" style="--d:.26s">Economia de <strong>R$ ${eco}</strong> no Lantana Day</p>
+      <a class="btn btn-solid rv" style="--d:.3s" href="${wa(msg)}" target="_blank" rel="noopener">Pedir pelo WhatsApp ${seta}</a>
+    </div>
+  </article>`;
+}).join('');
+
+// Links de WhatsApp e rodapé
+document.querySelectorAll('[data-wa="geral"]').forEach(a => { a.href = wa(CONFIG.mensagemGeral); });
+document.querySelectorAll('[data-wa="kit"]').forEach(a => { a.href = wa(CONFIG.mensagemKit); });
+document.querySelectorAll('[data-wa="manip"]').forEach(a => { a.href = wa(CONFIG.mensagemManip); });
+document.getElementById('validade').textContent = CONFIG.validade;
+
+// Contador
+const inicio = new Date(CONFIG.inicio).getTime(), fim = new Date(CONFIG.fim).getTime();
+const cdLabel = document.getElementById('cd-label'), casas = [...document.querySelectorAll('#countdown b')];
+function tick() {
+  const agora = Date.now(), antes = agora < inicio;
+  cdLabel.textContent = antes ? 'Começa em' : 'Termina em';
+  const s = Math.max(0, Math.floor(((antes ? inicio : fim) - agora) / 1000));
+  if (!s) { document.getElementById('countdown').hidden = true; cdLabel.textContent = 'Edição encerrada'; return; }
+  const v = { h: Math.floor(s / 3600), m: Math.floor(s % 3600 / 60), s: s % 60 };
+  casas.forEach(b => { b.textContent = dois(v[b.dataset.u]); });
+}
+tick(); setInterval(tick, 1000);
+
+// Animações de entrada
+requestAnimationFrame(() => document.body.classList.add('is-loaded'));
+function contar(el) {
+  const alvo = +el.dataset.count;
+  if (reduz) { el.textContent = alvo; return; }
+  const t0 = performance.now(), dur = 1400;
+  const passo = t => { const k = Math.min(1, (t - t0) / dur); el.textContent = Math.round(alvo * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(passo); };
+  requestAnimationFrame(passo);
+}
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add('in');
+  e.target.querySelectorAll('[data-count]').forEach(contar);
+  io.unobserve(e.target);
+}), { threshold: .12, rootMargin: '0px 0px -6% 0px' });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+// Cabeçalho
+const hdr = document.getElementById('top');
+const onScroll = () => hdr.classList.toggle('is-solid', scrollY > 40);
+addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+</script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Week | Lantana</title>
+<meta name="description" content="Black Week Lantana: Creatina Gummy com preço progressivo, Shot Impulso, Suchá Lanfit e até 25% off em manipulados.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0a; --bg-2:#111111; --surface:#151515; --ink:#f4f1ec; --muted:#a3a19c; --dim:#6d6b67;
+  --line:rgba(244,241,236,.10); --line-2:rgba(244,241,236,.18);
+  --brand:#70b5c0; --brand-2:#c7e0e9; --brand-deep:#0e6371; --navy:#0c1319;
+  --radius:22px; --radius-sm:12px;
+  --wrap:1240px; --pad:clamp(20px,4vw,48px); --head:76px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--head) + 8px);background:var(--bg)}
+body{margin:0;font-family:'Sora',system-ui,sans-serif;color:var(--ink);background:var(--bg);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--pad)}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-style:italic;letter-spacing:-.01em}
+:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:6px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--brand)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
+::selection{background:var(--brand-deep);color:#fff}
+
+/* ícone vazado da Lantana: marca d'água discreta */
+.watermark{position:absolute;pointer-events:none;z-index:0;aspect-ratio:1;background:url(bw/icone-lantana-vazado.png) center/contain no-repeat;opacity:var(--o,.09)}
+.hero .watermark{width:min(78vw,980px);right:-22%;top:50%;margin-top:calc(min(78vw,980px) / -2);--o:.10}
+.manip .watermark{width:min(60vw,720px);left:-18%;top:-10%;--o:.07}
+.closing .watermark{width:min(90vw,860px);left:50%;bottom:-62%;margin-left:calc(min(90vw,860px) / -2);--o:.09}
+.hero-grid,.manip .wrap,.closing .wrap{position:relative;z-index:1}
+
+/* grão sutil */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* barra de progresso */
+.progress{position:fixed;top:0;left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--brand),var(--brand-2));z-index:60}
+
+/* cabeçalho */
+.top{position:fixed;inset:0 0 auto;z-index:50;transition:background-color .4s,border-color .4s,backdrop-filter .4s;border-bottom:1px solid transparent}
+.top.is-solid{background:rgba(10,10,10,.72);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-color:var(--line)}
+.top-in{display:flex;align-items:center;gap:36px;height:var(--head)}
+.logo img{height:52px;width:auto}
+.top nav{display:flex;gap:30px;margin-left:auto}
+.top nav a{text-decoration:none;font-size:14px;font-weight:500;color:var(--muted);transition:color .25s}
+.top nav a:hover{color:var(--ink)}
+
+/* botões */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 34px;border-radius:999px;font:700 14px/1.2 'Sora',sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;overflow:hidden;isolation:isolate;transition:transform .3s var(--ease),color .3s,box-shadow .3s}
+.btn svg{transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-primary{background:#fff;color:#0a0a0a;box-shadow:0 0 0 4px color-mix(in srgb,var(--c,var(--brand)) 22%,transparent),0 14px 34px -10px color-mix(in srgb,var(--c,var(--brand)) 70%,transparent)}
+.btn-primary:hover{box-shadow:0 0 0 6px color-mix(in srgb,var(--c,var(--brand)) 30%,transparent),0 18px 40px -10px color-mix(in srgb,var(--c,var(--brand)) 85%,transparent);transform:translateY(-2px)}
+.btn-primary::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--c,var(--brand));transform:translateY(101%);transition:transform .45s var(--ease)}
+.btn-primary:hover::before{transform:none}
+.btn-ghost{min-height:44px;padding:0 22px;font-size:12px;color:var(--ink);background:rgba(112,181,192,.10);box-shadow:inset 0 0 0 1px var(--brand)}
+.btn-ghost:hover{background:var(--brand);color:#0a0a0a}
+.btn:active{transform:scale(.98)}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:calc(var(--head) + 32px) 0 56px;overflow:hidden}
+.hero-glow{position:absolute;inset:auto -10% -30% 30%;height:90%;background:radial-gradient(closest-side,rgba(14,99,113,.38),transparent 70%);filter:blur(20px);pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(12,19,25,.9));pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center;width:100%}
+.hero h1{font-size:clamp(68px,12.5vw,190px);font-weight:700;letter-spacing:-.06em;line-height:.86;margin:28px 0 30px}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .ln > span{display:block;transform:translateY(105%);transition:transform 1.1s var(--ease)}
+.hero h1 .ln:nth-child(2) > span{transition-delay:.12s}
+.is-loaded .hero h1 .ln > span{transform:none}
+.hero h1 .out,.closing h2 .out{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.03em;background:linear-gradient(100deg,var(--ink) 10%,var(--brand-2) 55%,var(--dim) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+.hero-sub{font-size:clamp(16px,1.4vw,19px);color:var(--muted);max-width:40ch;font-weight:300}
+.hero-sub strong{color:var(--ink);font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:28px;margin-top:36px}
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease) .45s,transform .9s var(--ease) .45s}
+.is-loaded .fade-in{opacity:1;transform:none}
+
+.countdown{display:flex;gap:6px;align-items:flex-start}
+.countdown div{display:grid;justify-items:center;min-width:56px}
+.countdown b{font-size:28px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1}
+.countdown small{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.countdown i{font-style:normal;font-size:24px;color:var(--dim);line-height:1.2}
+.cd-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+
+/* fileira com todos os produtos da campanha, sem destaque para um só */
+.hero-visual{position:relative;justify-self:center;width:100%;max-width:720px}
+.lineup{display:flex;justify-content:center;align-items:flex-end}
+.lineup{position:relative}
+.lineup::after{content:"";position:absolute;z-index:-1;left:8%;right:8%;bottom:6%;height:22%;border-radius:50%;background:radial-gradient(closest-side,rgba(112,181,192,.28),transparent);filter:blur(18px)}
+.jar{position:relative;flex:none;width:42%;margin-inline:-8.5%;mix-blend-mode:lighten;opacity:0;transform:translateY(48px);transition:opacity 1.2s var(--ease),transform 1.5s var(--ease);transition-delay:calc(.2s + var(--i) * .12s)}
+.jar img{width:100%;-webkit-mask-image:radial-gradient(closest-side at 50% 50%,#000 58%,transparent 100%);mask-image:radial-gradient(closest-side at 50% 50%,#000 58%,transparent 100%)}
+/* pirâmide: potes baixos nas pontas (atrás), potes altos no centro (à frente) */
+.jar--ponta{width:39%;margin-bottom:13%}
+.jar--centro{width:47%;z-index:1}
+.is-loaded .jar{opacity:1;transform:none}
+/* iguala o tamanho visual dos potes: cada foto tem o pote em uma escala diferente */
+.norm{scale:var(--z,1);transform-origin:50% var(--base,80%);translate:0 calc((80% - var(--base,80%)))}
+.hero-badge{position:absolute;right:0;top:-6%;z-index:2;width:118px;height:118px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--ink);color:#0a0a0a;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;line-height:1.25;animation:float 6s ease-in-out infinite}
+.hero-badge strong{display:block;font-size:30px;letter-spacing:-.04em;line-height:1}
+@keyframes float{50%{transform:translateY(-10px) rotate(-4deg)}}
+.scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:1px;height:44px;background:linear-gradient(var(--line-2),transparent);overflow:hidden}
+.scroll-hint::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--ink);animation:drip 2.2s var(--ease) infinite}
+@keyframes drip{to{top:110%}}
+
+/* faixa corrida */
+.ticker{border-block:1px solid var(--line);overflow:hidden;padding-block:18px;background:var(--bg)}
+.ticker-track{display:flex;width:max-content;animation:marquee 38s linear infinite}
+.ticker span{display:inline-flex;align-items:center;gap:28px;padding-right:28px;font-size:clamp(18px,2.2vw,28px);font-weight:500;letter-spacing:-.02em;white-space:nowrap}
+.ticker span em{font-family:'Instrument Serif',serif;font-weight:400;color:var(--muted)}
+.ticker span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* seções */
+.block{padding-block:clamp(88px,12vw,160px);position:relative}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:32px;align-items:end;margin-bottom:clamp(44px,6vw,80px)}
+.sec-head h2{font-size:clamp(40px,6vw,84px);margin-top:20px}
+.sec-head p{color:var(--muted);font-size:17px;font-weight:300;max-width:42ch;justify-self:end}
+
+/* revelar no scroll */
+.rv{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.rv-img{clip-path:inset(12% 12% 12% 12% round var(--radius));transition:clip-path 1.4s var(--ease)}
+.rv-img.in{clip-path:inset(0 0 0 0 round var(--radius))}
+
+/* palco das fotos */
+.stage{position:relative;border-radius:var(--radius);overflow:hidden;background:radial-gradient(90% 70% at 50% 45%,#1c1c1c 0%,#0c0c0c 70%);aspect-ratio:var(--ar,4/5)}
+.stage::before{content:"";position:absolute;inset:auto 10% -20%;height:60%;background:radial-gradient(closest-side,color-mix(in srgb,var(--c,#fff) 28%,transparent),transparent);filter:blur(30px);opacity:.55;transition:opacity .6s}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.stage--png img{object-fit:contain;scale:1.2;translate:0 3%;filter:drop-shadow(0 24px 30px rgba(0,0,0,.65))}
+.stage--png::after{content:"";position:absolute;left:30%;right:30%;bottom:4%;height:16px;border-radius:50%;background:rgba(0,0,0,.75);filter:blur(10px)}
+
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:24px 0 0}
+.chips li{font-size:12px;font-weight:500;letter-spacing:.04em;padding:7px 14px;border-radius:999px;border:1px solid var(--line-2);color:var(--ink)}
+.f-apres{font-size:13px;color:var(--muted);letter-spacing:.04em}
+
+/* ofertas */
+.manip{background:radial-gradient(70% 60% at 0% 0%,rgba(14,99,113,.22),transparent 70%),linear-gradient(180deg,var(--navy),var(--bg) 85%);border-top:1px solid rgba(112,181,192,.16);overflow:hidden}
+/* um espaço para cada produto, alternando lado da foto */
+.feature{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.feature + .feature{margin-top:clamp(96px,12vw,170px)}
+.feature::before{content:"";position:absolute;z-index:-1;width:70%;aspect-ratio:1;left:-10%;top:50%;translate:0 -50%;border-radius:50%;background:radial-gradient(closest-side,color-mix(in srgb,var(--c) 16%,transparent),transparent);filter:blur(30px);opacity:0;transition:opacity 1.6s var(--ease)}
+.feature.in::before{opacity:1}
+.feature:nth-child(even)::before{left:auto;right:-10%}
+.feature:nth-child(even) .f-media{order:2}
+.f-media{position:relative}
+.feature .stage{--ar:4/5}
+.feature .stage img{transform:scale(1.14);transition:transform 1.8s var(--ease)}
+.feature .stage.in img{transform:none}
+.f-num{font-size:12px;letter-spacing:.2em;color:var(--dim);font-variant-numeric:tabular-nums}
+.feature h3{font-size:clamp(40px,5.2vw,72px);margin:16px 0 10px}
+.feature h3 .serif{color:var(--c)}
+.f-desc{margin-top:22px;color:var(--muted);font-weight:300;font-size:17px;max-width:42ch}
+.f-off{display:flex;align-items:center;gap:18px;margin:34px 0 30px;padding-top:26px;border-top:1px solid var(--line)}
+.pct{display:flex;align-items:flex-start;font-size:clamp(76px,8.4vw,128px);font-weight:700;letter-spacing:-.07em;line-height:.8;color:var(--c);font-variant-numeric:tabular-nums}
+.pct small{font-size:.4em;letter-spacing:-.02em;margin:.08em 0 0 .04em;font-weight:600}
+.pct-off{display:grid;gap:4px;font-size:12px;letter-spacing:.22em;font-weight:600;text-transform:uppercase;color:var(--ink)}
+.pct-off span{letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--muted);font-size:13px}
+.preco{display:grid;gap:6px;line-height:1}
+.preco s{font-size:14px;color:var(--dim);text-decoration-thickness:1px}
+.preco b{font-size:clamp(30px,3.2vw,44px);font-weight:700;letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.preco b small{font-size:.42em;font-weight:600;letter-spacing:0;color:var(--c);margin-right:2px}
+.preco span{font-size:12px;color:var(--muted);letter-spacing:.02em}
+.tag-off{position:absolute;z-index:2;top:22px;left:22px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:var(--c);color:#fff}
+.feature:nth-child(even) .tag-off{left:auto;right:22px}
+
+/* fechamento */
+.closing{text-align:center;overflow:hidden;background:radial-gradient(60% 55% at 50% 100%,rgba(14,99,113,.30),transparent 75%)}
+.closing h2{font-size:clamp(52px,10vw,150px);letter-spacing:-.06em;line-height:.9}
+.closing p{color:var(--muted);font-weight:300;font-size:18px;max-width:44ch;margin:28px auto 40px}
+
+.rodape{background:var(--navy);border-top:1px solid rgba(112,181,192,.16);padding-block:44px;font-size:13px;color:var(--muted)}
+.foot{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center}
+.foot .logo img{height:50px}
+.foot nav{display:flex;gap:22px}
+.foot a{text-decoration:none;color:var(--ink);transition:opacity .2s}
+.foot a:hover{opacity:.7}
+
+@media (max-width:1099px){
+}
+@media (max-width:959px){
+  .hero-grid,.sec-head{grid-template-columns:1fr}
+  .hero-visual{max-width:480px;order:-1;margin-top:8px}
+  .jar,.f-media{translate:none!important}
+  .feature{grid-template-columns:1fr;max-width:560px;margin-inline:auto}
+  .feature:nth-child(even) .f-media{order:0}
+  .feature::before{width:110%;left:-5%;top:30%}
+  .hero h1{margin-top:20px}
+  .sec-head p{justify-self:start}
+  .foot{grid-template-columns:auto 1fr}
+  .foot nav{grid-column:1/-1}
+}
+@media (max-width:639px){
+  :root{--head:64px}
+  .top nav{display:none}
+  .top-in{justify-content:space-between}
+  .logo img{height:42px}
+  .btn-ghost{white-space:nowrap;padding:0 14px;font-size:11px;letter-spacing:.04em}
+  .hero-badge{top:-10%;right:0}
+  .hero-badge{width:92px;height:92px;font-size:9px;right:-4%}
+  .hero-badge strong{font-size:24px}
+  .hero-cta{gap:22px}
+  .hero-cta .btn,.closing .btn{width:100%}
+  .countdown div{min-width:48px}
+  .countdown b{font-size:24px}
+  .f-media + div .btn{width:100%}
+  .foot{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.fade-in,.hero h1 .ln > span,.jar,.feature .stage img{opacity:1!important;transform:none!important}
+  .rv-img{clip-path:none!important}
+}
+</style>
+<link rel="canonical" href="https://lantanaday.com.br/blackweek/">
+<meta property="og:url" content="https://lantanaday.com.br/blackweek/">
+<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EWKD2BP9VX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EWKD2BP9VX');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me"],a[href*="whatsapp.com"]');if(a)gtag('event','clique_whatsapp',{campanha:'blackweek'});},true);</script>
+</head>
+<body>
+<!--
+  BLACK WEEK LANTANA | NOVEMBRO 2026
+  Para editar preços, textos, fotos, data final e WhatsApp, altere apenas o bloco CONFIG no final deste arquivo.
+-->
+<div class="progress" id="progress"></div>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a href="#topo" class="logo"><img src="bw/logo-lantana-claro.png" alt="Lantana Saúde Personalizada" width="720" height="238"></a>
+    <nav aria-label="Seções">
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-ghost" data-wa="geral" href="#" target="_blank" rel="noopener">Falar com a Lantana</a>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="watermark" data-rot="0.04" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow fade-in">Lantana · 23 a 28 de novembro</p>
+        <h1><span class="ln"><span>Black</span></span><span class="ln"><span class="out">Week</span></span></h1>
+        <p class="hero-sub fade-in"><strong>Até 35% off</strong> na Creatina Gummy e nos shots Detox, Matinal e Saúde da Mulher.</p>
+        <div class="hero-cta fade-in">
+          <a class="btn btn-primary" href="#ofertas">Ver ofertas <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <div id="cd-wrap">
+            <p class="cd-label" id="cd-label">Termina em</p>
+            <div class="countdown" id="countdown" aria-live="off">
+              <div><b data-u="d">00</b><small>dias</small></div><i>:</i>
+              <div><b data-u="h">00</b><small>horas</small></div><i>:</i>
+              <div><b data-u="m">00</b><small>min</small></div><i>:</i>
+              <div><b data-u="s">00</b><small>seg</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="lineup" id="lineup"></div>
+        <div class="hero-badge" aria-hidden="true"><span>até<strong>35%</strong>off</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"></div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
+  <section class="block manip" id="ofertas">
+    <div class="watermark" data-rot="-0.03" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow rv">Ofertas Black Week</p>
+          <h2 class="rv" style="--d:.08s">Até <span class="serif">35% off</span></h2>
+        </div>
+        <p class="rv" style="--d:.16s">Desconto direto em quatro produtos da Lantana. Escolha o seu e fale com a equipe pelo WhatsApp para fazer o pedido.</p>
+      </div>
+      <div id="lista-ofertas"></div>
+    </div>
+  </section>
+
+  <section class="block closing" id="contato">
+    <div class="watermark" data-rot="0.03" aria-hidden="true"></div>
+    <div class="wrap">
+      <h2 class="rv">Só nesta<br><span class="out">semana.</span></h2>
+      <p class="rv" style="--d:.1s">Fale com a equipe da Lantana para tirar dúvidas sobre os produtos e garantir as condições da Black Week.</p>
+      <a class="btn btn-primary rv" style="--d:.18s" data-wa="geral" href="#" target="_blank" rel="noopener">Falar com a Lantana <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap foot">
+    <a href="#topo" class="logo"><img src="bw/logo-lantana-claro.png" alt="Lantana Saúde Personalizada" width="720" height="238"></a>
+    <p id="validade"></p>
+    <nav aria-label="Lantana nas redes">
+      <a href="https://www.farmacialantana.com.br" target="_blank" rel="noopener">farmacialantana.com.br</a>
+      <a href="https://www.instagram.com/farmacialantana/" target="_blank" rel="noopener">@farmacialantana</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   CONFIG: tudo o que muda na campanha fica aqui.
+   - cor: cor de destaque de cada produto (puxada da embalagem).
+   - png: true para fotos com fundo transparente.
+   ===================================================================== */
+const CONFIG = {
+  // WhatsApp: +55 31 9 9225-0059
+  whatsapp: '5531992250059',
+  mensagemGeral: 'Olá! Vi a Black Week da Lantana e gostaria de saber mais sobre as ofertas.',
+
+  // Período da Black Week: antes do início o contador mostra "Começa em"; depois, "Termina em".
+  inicio: '2026-11-18T00:00:00-03:00',
+  fim: '2026-11-28T23:59:59-03:00',
+  validade: 'Ofertas válidas até 28/11/2026 ou enquanto durarem os estoques. Consulte as condições de pagamento e entrega.',
+
+  ticker: ['Black Week Lantana', 'Creatina Gummy <em>35% off</em>', 'Shots até <em>25% off</em>', '23 a 28 de novembro'],
+  periodo: 'de 23 a 28 de novembro',
+
+  // Produtos da Black Week (aparecem no topo e nas seções, nesta ordem).
+  // zoom: aumenta ou diminui o pote na foto para todos parecerem do mesmo tamanho.
+  // zoomTopo: tamanho do pote só na fileira do topo (shots um pouco menores, mais fiel ao tamanho real).
+  // base: altura (em %) onde o pote encosta na mesa, para alinhar os potes no topo.
+  // Ordem dos potes no topo (números da lista abaixo, começando em 0): pontas = 1º e 4º, centro = 2º e 3º.
+  ordemTopo: [0, 1, 3, 2],
+
+  ofertas: [
+    {
+      nome: 'Shot <span class="serif">Detox</span>', nomeMsg: 'Shot Detox Green Lanfit', cor: '#4cc04a', off: 20, de: '149,90', por: '119,90',
+      foto: 'bw/shot-detox.jpg', zoom: 1.08, zoomTopo: 0.88, base: 76.5,
+      apresentacao: 'Green Lanfit · 30 doses · 150 g',
+      descricao: 'Com beta-glucana, espirulina, chlorella, couve e espinafre em pó, sabor abacaxi com hortelã. 1 dose ao dia.',
+      destaques: ['Beta-glucana', 'Espirulina', 'Chlorella']
+    },
+    {
+      nome: 'Shot <span class="serif">Matinal</span>', nomeMsg: 'Lanfit Shot Matinal', cor: '#6cc3b5', off: 20, de: '119,90', por: '95,90',
+      foto: 'bw/shot-matinal.jpg', zoom: 1.03, zoomTopo: 1.02, base: 80.7, pos: '50% 25%',
+      apresentacao: 'Lanfit · Sabor limão · 420 g',
+      descricao: 'Com L-glutamina 3.000 mg, fibras 5,7 g, coenzima Q10, resveratrol, cúrcuma e zinco. Dissolva 2 dosadores em 200 ml de água ou suco.',
+      destaques: ['L-glutamina', 'Fibras', 'Coenzima Q10']
+    },
+    {
+      nome: 'Saúde <span class="serif">da Mulher</span>', nomeMsg: 'Shot Saúde da Mulher', cor: '#e1287a', off: 25, de: '149,90', por: '112,40',
+      foto: 'bw/shot-saude-mulher.jpg', zoom: 1.05, zoomTopo: 0.86, base: 76,
+      apresentacao: 'Shot · 30 doses · 150 g',
+      descricao: 'Com mio-inositol, L-arginina, feno-grego, pinho marítimo e frutas vermelhas liofilizadas. 1 dose ao dia.',
+      destaques: ['Mio-inositol', 'L-arginina', 'Feno-grego']
+    },
+    {
+      nome: 'Creatina <span class="serif">Gummy</span>', nomeMsg: 'Creatina Gummy sabor uva', cor: '#b552d9', off: 35, de: '139,90', por: '90,90',
+      foto: 'bw/creatina-gummy.jpg', zoom: 0.98, zoomTopo: 1.0, base: 84,
+      apresentacao: 'Goma sabor uva · 30 gomas',
+      descricao: 'Goma com 3 g de creatina monohidratada. Zero glúten, zero lactose e zero açúcar. 1 goma ao dia.',
+      destaques: ['3 g por goma', 'Sabor uva', 'Zero açúcar']
+    }
+  ]
+};
+
+/* ===================== não é preciso editar abaixo ===================== */
+const wa = msg => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+const semTag = s => s.replace(/<[^>]+>/g, '');
+const seta = '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+const stage = (foto, alt, png, extra = '', pos = '') => `<div class="stage${png ? ' stage--png' : ''} ${extra}"><img src="${foto}" alt="${alt}" loading="lazy"${pos ? ` style="object-position:${pos}"` : ''}></div>`;
+
+// Ticker
+const itens = CONFIG.ticker.map(t => `<span>${t}</span>`).join('');
+document.getElementById('ticker').innerHTML = itens.repeat(4);
+
+// Topo: todos os produtos lado a lado
+const vel = [-0.05, -0.11, -0.11, -0.05];
+document.getElementById('lineup').innerHTML = CONFIG.ordemTopo.map(n => CONFIG.ofertas[n]).map((p, i) =>
+  `<span class="jar ${i === 0 || i === 3 ? 'jar--ponta' : 'jar--centro'}" style="--i:${i}" data-speed="${vel[i % vel.length]}"><img class="norm" src="${p.foto}" alt="Embalagem de ${semTag(p.nome)}" width="1024" height="1536" style="--z:${p.zoomTopo || p.zoom || 1};--base:${p.base || 80}%"${i < 2 ? ' fetchpriority="high"' : ''}></span>`
+).join('');
+
+// Ofertas: um espaço para cada produto
+const total = CONFIG.ofertas.length, dois = n => String(n).padStart(2, '0');
+document.getElementById('lista-ofertas').innerHTML = CONFIG.ofertas.map((p, i) => {
+  const nome = semTag(p.nome);
+  const msg = `Olá! Vi o ${p.nomeMsg} com ${p.off}% off (de R$ ${p.de} por R$ ${p.por}) na Black Week da Lantana e gostaria de fazer o pedido.`;
+  return `<article class="feature" style="--c:${p.cor}">
+    <div class="f-media" data-speed="0.05">
+      <span class="tag-off">${p.off}% off · R$ ${p.por}</span>
+      <div class="stage rv-img"><img src="${p.foto}" alt="Embalagem de ${nome}" loading="lazy" style="scale:${p.zoom || 1}${p.pos ? `;object-position:${p.pos}` : ''}"></div>
+    </div>
+    <div>
+      <p class="f-num rv">${dois(i + 1)} / ${dois(total)}</p>
+      <h3 class="rv" style="--d:.06s">${p.nome}</h3>
+      <p class="f-apres rv" style="--d:.1s">${p.apresentacao}</p>
+      <p class="f-desc rv" style="--d:.14s">${p.descricao}</p>
+      <ul class="chips rv" style="--d:.18s">${p.destaques.map(d => `<li>${d}</li>`).join('')}</ul>
+      <div class="f-off rv" style="--d:.22s">
+        <p class="pct"><span data-count="${p.off}">0</span><small>%</small></p>
+        <p class="preco"><s>de R$ ${p.de}</s><b><small>por R$</small> ${p.por}</b><span>Off na Black Week · ${CONFIG.periodo}</span></p>
+      </div>
+      <a class="btn btn-primary rv" style="--d:.28s;--c:${p.cor}" href="${wa(msg)}" target="_blank" rel="noopener">Quero ${p.off}% off ${seta}</a>
+    </div>
+  </article>`;
+}).join('');
+
+// Atendimento geral e rodapé
+document.querySelectorAll('[data-wa="geral"]').forEach(a => { a.href = wa(CONFIG.mensagemGeral); });
+document.getElementById('validade').textContent = CONFIG.validade;
+
+// Contador
+const inicio = new Date(CONFIG.inicio).getTime(), fim = new Date(CONFIG.fim).getTime();
+const cd = document.getElementById('countdown'), cdLabel = document.getElementById('cd-label');
+const pad = n => String(n).padStart(2, '0');
+function tick() {
+  const agora = Date.now(), antes = agora < inicio;
+  cdLabel.textContent = antes ? 'Começa em' : 'Termina em';
+  let s = Math.max(0, Math.floor(((antes ? inicio : fim) - agora) / 1000));
+  if (!s) { document.getElementById('cd-wrap').hidden = true; return; }
+  const v = { d: Math.floor(s / 86400), h: Math.floor(s % 86400 / 3600), m: Math.floor(s % 3600 / 60), s: s % 60 };
+  cd.querySelectorAll('b').forEach(b => { b.textContent = pad(v[b.dataset.u]); });
+}
+tick(); setInterval(tick, 1000);
+
+// Animações
+const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+requestAnimationFrame(() => document.body.classList.add('is-loaded'));
+
+function contar(el) {
+  const alvo = +el.dataset.count;
+  if (reduz) { el.textContent = alvo; return; }
+  const t0 = performance.now(), dur = 1200;
+  const passo = t => { const k = Math.min(1, (t - t0) / dur); el.textContent = Math.round(alvo * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(passo); };
+  requestAnimationFrame(passo);
+}
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add('in');
+  e.target.querySelectorAll('[data-count]').forEach(contar);
+  io.unobserve(e.target);
+}), { threshold: .18, rootMargin: '0px 0px -6% 0px' });
+document.querySelectorAll('.rv, .rv-img, .feature').forEach(el => io.observe(el));
+
+// Cabeçalho, progresso e parallax
+const hdr = document.getElementById('top'), bar = document.getElementById('progress');
+const par = [...document.querySelectorAll('[data-speed]')];
+const rot = [...document.querySelectorAll('[data-rot]')];
+let pend = false;
+function onScroll() {
+  pend = false;
+  const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+  hdr.classList.toggle('is-solid', y > 40);
+  bar.style.transform = `scaleX(${h > 0 ? y / h : 0})`;
+  if (reduz) return;
+  rot.forEach(el => { el.style.rotate = `${(y * +el.dataset.rot).toFixed(2)}deg`; });
+  if (innerWidth < 960) return;
+  par.forEach(el => {
+    const r = el.getBoundingClientRect();
+    const meio = r.top + r.height / 2 - innerHeight / 2;
+    el.style.translate = `0 ${(meio * +el.dataset.speed).toFixed(1)}px`;
+  });
+}
+addEventListener('scroll', () => { if (!pend) { pend = true; requestAnimationFrame(onScroll); } }, { passive: true });
+addEventListener('resize', onScroll);
+onScroll();
+</script>
+</body>
+</html>
